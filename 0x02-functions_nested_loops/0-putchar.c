@@ -1,12 +1,19 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- * Return: Always return 0 (Success)
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-puts("_putchar");
-return (0);
+	char *sh = ("_putchar");
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
