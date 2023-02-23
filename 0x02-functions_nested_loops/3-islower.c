@@ -7,7 +7,7 @@ int _islower(int c)
 {
 	int i = 'a';
 
-	for (i = 'a'; <= 'z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (c == i)
 		{
