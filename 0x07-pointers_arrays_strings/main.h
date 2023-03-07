@@ -7,8 +7,7 @@
  * Desc: Header file containing prototypes for all functions used in the 0x07-pointers_arrays_strings directory. 
  */
 
-#include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
