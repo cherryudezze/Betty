@@ -1,10 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
+
 /**
  * Auth: Cherry Udeze
- * Desc: Header file containing prototypes for all functions 
- *       used in the 0x0B-more_malloc_free directory. 
+ * Desc: Header file containing prototypes for all functions used in the 0x0C-more_malloc_free directory. 
  */
 
 int _putchar(char c);
