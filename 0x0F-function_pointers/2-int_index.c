@@ -1,20 +1,24 @@
 #include "function_pointers.h"
-#include <stdio.h>
 /**
- * array_iterator - prints each array element on a newline.
- * @array: array
- * @size: how many elements to print
- * @action: pointer to print in regular or hex
- * Return: void
+ * int_index - searches for an integer
+ * @array: array with data
+ * @size: size of the array
+ * @cmp: function pointer
+ * Return: count of integer
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i;
+int i;
 
-	if (array == NULL || action == NULL)
-		return;
-	for (i = 0; i < size; i++)
-	{
-		action(array[i]);
-	}
+if (size <= 0)
+return (-1);
+if (array == NULL || cmp == NULL)
+return (-1);
+
+for (i = 0; i < size; i++)
+{
+if (cmp(array[i]) == 1)
+return (i);
+}
+return (-1);
 }
