@@ -1,6 +1,3 @@
-es (80 sloc)  1.65 KB
- 
-
 #include "lists.h"
 
 size_t looped_listint_count(listint_t *head);
